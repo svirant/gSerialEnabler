@@ -44,6 +44,7 @@ There are plenty of options for PCB manufacturing but I prefer [JLCPCB](https://
 | 9  | J3,J4 | 2.54mm male pin headers | break off the male headers that come with the Arduino Nano | | 
 | 5 | Pogo-Pin | Mill-Max 0906-1-15-20-75-14-11-0 | [Digikey](https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/0906-1-15-20-75-14-11-0/1147049) | |
 |    | |  or **5x** 1.27mm male pin headers for permanent installation | | |
+| 1  | | Arduino Nano type c | Support [RetroRGB!](https://amzn.to/4gnHqN4) | Make sure the headers are not soldered. |
 
 
 # Programming an Arduino Nano
