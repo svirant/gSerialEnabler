@@ -44,7 +44,7 @@ There are plenty of options for PCB manufacturing but I prefer [JLCPCB](https://
 |    | |  or **5x** 1.27mm male pin headers for permanent installation | | |
 | 1  | | Arduino Nano type c | Support [RetroRGB!](https://amzn.to/4gnHqN4) | Make sure the headers are not soldered. |
 | 1  | | Any 3.5mm / aux / stereo / trs / cable | [AliExpress](https://www.aliexpress.us/item/2255799962255486.html) | |
-| 1  | | usb-c cable for Arduino power & programming | [AliExpress](https://www.aliexpress.us/item/3256806983355947.html) | |
+| 1  | | usb-c cable for Arduino programming | [AliExpress](https://www.aliexpress.us/item/3256806983355947.html) | |
 
 
 # Programming an Arduino Nano
