@@ -42,7 +42,7 @@ There are plenty of options for PCB manufacturing but I prefer [JLCPCB](https://
 | 1  | U1 | IC BUF NON-INVERT 5.5V SOT23-6 | [Digikey](https://www.digikey.com/en/products/detail/texas-instruments/SN74LVC2G07DBVR/486427) | |
 | 1  | J2 | PJ-320 3.5MM Headphone Jack Audio Video Female | [AliExpress](https://www.aliexpress.us/item/3256807448104402.html) | Color: PJ-320B DIP | 
 | 5 | Pogo-Pin | Mill-Max 0906-1-15-20-75-14-11-0 | [Digikey](https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/0906-1-15-20-75-14-11-0/1147049) | |
-|    | |  or **5x** 1.27mm pin headers for permanent installation | | |
+|    | |  or **5x** 1.27mm male pin headers for permanent installation | | |
 
 
 # Programming an Arduino Nano
