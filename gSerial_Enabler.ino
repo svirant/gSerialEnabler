@@ -22,6 +22,8 @@
 //////////////////
 */
 
+uint8_t debugG = 0; // line ~179
+
 uint16_t const offset = 0; // Only needed for multiple gSerial Enablers. Set offset so 2nd, 3rd, etc gSEs don't overlap profiles. (e.g. offset = 8;) 
 
 bool S0 = false;        // (Profile 0) 
@@ -174,6 +176,12 @@ void readGscart(){
     fpdccount = 0;
   }
 
+  if(debugG){ // debug
+    delay(200);
+    Serial.print(F("A0 voltage:         "));Serial.println(val[0]/211);
+    Serial.print(F("A1 voltage:         "));Serial.println(val[1]/211);
+    Serial.print(F("A2 voltage:         "));Serial.println(val[2]/211);
+  }
 
   if(samcc < samsize) // increment counter until "samsize" has been reached then reset counter and "highcount"
     samcc++;
