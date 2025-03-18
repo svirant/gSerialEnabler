@@ -24,10 +24,10 @@
 
 uint8_t debugG = 0; // line ~179
 
-uint16_t const offset = 0; // Only needed for multiple gSerial Enablers. Set offset so 2nd, 3rd, etc gSEs don't overlap profiles. (e.g. offset = 8;) 
+uint16_t const offset = 0; // Only needed if multiple Donut Holes, gSerial Enablers, Donut Dongles are connected. Set offset so 2nd, 3rd, etc don't overlap profiles. (e.g. offset = 8;) 
 
-bool S0 = false;        // (Profile 0) 
-                         //  ** Recommended to leave this option "false" if using in tandem with the Scalable Video Switch. AKA Leave JP1 trace un-cut**
+bool S0 = false;           // (Profile 0) 
+                           //  ** Recommended to leave this option "false" if using in tandem with other Serial devices. ** (Leave JP1 trace un-cut)
 
 ////////////////////
                        
