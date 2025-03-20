@@ -193,11 +193,11 @@ void readGscart(){
 } // end readGscart()
 
 void sendSVS(uint16_t num){
-  Serial.print(F("SVS NEW INPUT="));
+  Serial.print(F("\rSVS NEW INPUT="));
   Serial.print(num + offset);
   Serial.println(F("\r"));
   delay(1000);
-  Serial.print(F("SVS CURRENT INPUT="));
+  Serial.print(F("\rSVS CURRENT INPUT="));
   Serial.print(num + offset);
   Serial.println(F("\r"));
 }
