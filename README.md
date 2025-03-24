@@ -63,10 +63,16 @@ Some Arduino Nanos come with an Old Bootloader and won't Upload unless specified
 
 ## SVS Profile numbering scheme
 
-**Input 1-8 = 201 - 208**
+**Input 1-8 = S201\_ - S208\_**
 
 The "offset" option can be used if using multiple gSerial Enablers connected to the RT4K via a headphone splitter. If using a 2nd, change to "offset = 8" for the 2nd to be SVS profiles 209 - 216.
 
 ```
 uint16_t const offset = 0; // Only needed for multiple gSerial Enablers. Set offset so 2nd, 3rd, etc gSEs don't overlap profiles. (e.g. offset = 8;) 
 ```
+
+## S0_ profile Enable
+
+By cutting the trace on the PCB, you can enable the S0_ profile which will load S0_\<whatever\>.rt4 when all inputs are off. If you wish to revert the change, you can bridge the trace with a solder blob. 
+
+Instead of cutting the trace, you can also change line 29 of the gSerial_Enalber.ino to "true" for the same functionality. ...Assuming you are able to program the Arduino Nano with the updated .ino. Up to you which method to choose.
