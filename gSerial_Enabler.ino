@@ -1,5 +1,5 @@
 /*
-* gSerial Enabler v0.1
+* gSerial Enabler v0.2
 * Copyright (C) 2025 @Donutswdad
 *
 * This program is free software: you can redistribute it and/or modify
@@ -24,7 +24,7 @@
 
 uint8_t debugG = 0; // line ~179
 
-uint16_t const offset = 0; // Only needed if multiple Donut Holes, gSerial Enablers, Donut Dongles are connected. Set offset so 2nd, 3rd, etc don't overlap profiles. (e.g. offset = 8;) 
+int const offset = 0; // Only needed if multiple Donut Holes, gSerial Enablers, Donut Dongles are connected. Set offset so 2nd, 3rd, etc don't overlap profiles. (e.g. offset = 8;) 
 
 bool S0 = false;           // (Profile 0) 
                            //  ** Recommended to leave this option "false" if using in tandem with other Serial devices. ** (Leave JP1 trace un-cut)
@@ -194,10 +194,12 @@ void readGscart(){
 
 void sendSVS(uint16_t num){
   Serial.print(F("\rSVS NEW INPUT="));
-  Serial.print(num + offset);
+  if(num == 0)Serial.print(num);
+  else Serial.print(num + offset);
   Serial.println(F("\r"));
   delay(1000);
   Serial.print(F("\rSVS CURRENT INPUT="));
-  Serial.print(num + offset);
+  if(num == 0) Serial.print(num);
+  else Serial.print(num + offset);
   Serial.println(F("\r"));
 }
