@@ -1,7 +1,15 @@
 # gSerial Enabler
 **"plug-n-play" gcomp/gscart EXT adapter that enables auto-profiles for the RetroTink 4K**
 
+ - A powered-on console on port 1-8 will load SVS profiles S201_ - S208_ on the RT4K Pro/CE
+
 <img width="700" src="./images/1.JPG" />
+<img width="700" src="./images/1c.JPG" />
+<img width="700" src="./images/1b.JPG" />
+<img width="700" src="./images/1a.JPG" />
+<br />
+
+## **Big Thanks! to [@UstSte](https://x.com/UstSte) for the photos and testing!**
 <br />
 <br />
 
@@ -24,6 +32,11 @@ There are plenty of options for PCB manufacturing but I prefer [JLCPCB](https://
 
 [<img width="400" src="./images/3.png" />](https://svirant.github.io/gSerialEnabler/images/ibom.html)
 
+ - In addition to the top of the usb-c port, place two more 6x2mm rubber feet to the spots shown, to secure the PCB.
+
+
+<img width="400" src="./images/4.JPG" />
+
 # PCB
 <img width="400" src="./images/PCB.png">
 
@@ -42,8 +55,9 @@ There are plenty of options for PCB manufacturing but I prefer [JLCPCB](https://
 | 9  | J3,J4 | 2.54mm male pin headers | break off the male headers that come with the Arduino Nano | | 
 | 5 | Pogo-Pin | Mill-Max 0906-1-15-20-75-14-11-0 | [Digikey](https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/0906-1-15-20-75-14-11-0/1147049) | |
 | 1  | | Arduino Nano type c | Support [RetroRGB!](https://amzn.to/4gnHqN4) | Make sure the headers are not soldered. |
-| 1  | | Any 3.5mm / aux / stereo / trs / cable | [AliExpress](https://www.aliexpress.us/item/2255799962255486.html) | |
+| 1  | | Any 3.5mm / aux / stereo / trs / cable | [AliExpress](https://www.aliexpress.us/item/2255799962255486.html) | I prefer the one listed because the cable itself is very flexible and has no problem being routed inside the case.|
 | 1  | | usb-c cable for Arduino programming | [AliExpress](https://www.aliexpress.us/item/3256806983355947.html) | |
+| 3 | | 6x2mm sticky rubber feet | [Amazon](https://www.amazon.com/dp/B06XCNM69B)| |
 
 
 # Programming an Arduino Nano
@@ -63,7 +77,7 @@ Some Arduino Nanos come with an Old Bootloader and won't Upload unless specified
 
 ## SVS Profile numbering scheme
 
-**Input 1-8 = S201\_ - S208\_**
+**Ports 1-8 = S201\_ - S208\_**
 
 The "offset" option can be used if using multiple gSerial Enablers connected to the RT4K via a headphone splitter. If using a 2nd, change to "offset = 8" for the 2nd to be SVS profiles 209 - 216.
 
