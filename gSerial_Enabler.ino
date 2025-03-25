@@ -1,5 +1,5 @@
 /*
-* gSerial Enabler v0.2
+* gSerial Enabler v0.3
 * Copyright (C) 2025 @Donutswdad
 *
 * This program is free software: you can redistribute it and/or modify
@@ -22,9 +22,9 @@
 //////////////////
 */
 
-uint8_t debugG = 0; // line ~179
+uint8_t debugG = 0; // line ~180
 
-int const offset = 0; // Only needed if multiple Donut Holes, gSerial Enablers, Donut Dongles are connected. Set offset so 2nd, 3rd, etc don't overlap profiles. (e.g. offset = 8;) 
+uint16_t const offset = 0; // Only needed if multiple Donut Holes, gSerial Enablers, Donut Dongles are connected. Set offset so 2nd, 3rd, etc don't overlap profiles. (e.g. offset = 8;) 
 
 bool S0 = false;           // (Profile 0) 
                            //  ** Recommended to leave this option "false" if using in tandem with other Serial devices. ** (Leave JP1 trace un-cut)
@@ -43,6 +43,7 @@ uint8_t const fpdccountmax = 3; // number of periods required when in the 50% du
 // gscart / gcomp Global variables
 uint8_t fpdcprev = 0; // stores 50% duty cycle detection
 uint8_t fpdccount = 0; // number of times a 50% duty cycle period has been detected
+uint8_t allgscartoff = 2; // 0 = at least 1 port is active, 1 = no ports are active, 2 = disconnected or not used yet
 uint8_t samcc = 0; // ADC sample cycle counter
 uint8_t highcount[3] = {0,0,0}; // number of high samples recorded for bit0, bit1, bit2
 uint8_t bitprev[3] = {0,0,0}; // stores previous bit state
@@ -98,16 +99,14 @@ void readGscart(){
   uint8_t bit[3] = {0,0,0};
   float val[3] = {0,0,0};
   
-
-  for(uint8_t i=0;i<3;i++){ // read in analog pin voltages, read each pin 4x in a row to ensure an accurate read, combats if using too large of a pull-down resistor
-    for(uint8_t j=0;j<4;j++){
+  for(uint8_t i = 0;i < 3; i++){ // read in analog pin voltages, read each pin 4x in a row to ensure an accurate read, combats if using too large of a pull-down resistor
+    for(uint8_t j = 0;j < 4; j++){
       val[i] = analogRead(apin[i]);
     }
     if((val[i]/211) >= highsamvolt){ // if voltage is greater than or equal to the voltage defined for a high, increase highcount by 1 for that analog pin
       highcount[i]++;
     }
   }
-
 
   if(samcc == samsize){               // when the "samsize" number of samples has been taken, if the voltage was "high" for more than "dch" # of the "samsize" samples, set the bit to 1
     for(uint8_t i=0;i<3;i++){
@@ -119,7 +118,7 @@ void readGscart(){
   }
 
 
-  if(((bit[2] != bitprev[2] || bit[1] != bitprev[1] || bit[0] != bitprev[0])) && (samcc == samsize) && !(fpdc)){
+  if(((bit[2] != bitprev[2] || bit[1] != bitprev[1] || bit[0] != bitprev[0]) || (allgscartoff > 0)) && (samcc == samsize) && !(fpdc)){
     //Detect which scart port is now active and change profile accordingly
     if((bit[2] == 0) && (bit[1] == 0) && (bit[0] == 0)){ // 0 0 0
       sendSVS(201);
@@ -146,6 +145,7 @@ void readGscart(){
       sendSVS(208);
     }
     
+    if(allgscartoff) allgscartoff = 0;
     bitprev[0] = bit[0];
     bitprev[1] = bit[1];
     bitprev[2] = bit[2];
@@ -156,6 +156,7 @@ void readGscart(){
 
   if((fpdccount == (fpdccountmax - 1)) && (fpdc != fpdcprev) && (samcc == samsize)){ // if no active port has been detected for fpdccountmax periods
     
+    allgscartoff = 1;
     memset(bitprev,0,sizeof(bitprev));
     fpdcprev = fpdc;
 
@@ -194,12 +195,10 @@ void readGscart(){
 
 void sendSVS(uint16_t num){
   Serial.print(F("\rSVS NEW INPUT="));
-  if(num == 0)Serial.print(num);
-  else Serial.print(num + offset);
+  Serial.print(num + offset);
   Serial.println(F("\r"));
   delay(1000);
   Serial.print(F("\rSVS CURRENT INPUT="));
-  if(num == 0) Serial.print(num);
-  else Serial.print(num + offset);
+  Serial.print(num + offset);
   Serial.println(F("\r"));
 }
