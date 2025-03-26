@@ -12,7 +12,7 @@
 # Thanks to 
    - **[@UstSte](https://x.com/UstSte) for the photos and testing.**
 
-   - **Bob @ [RetroRGB](https://www.retrorgb.com/) for the idea.**
+   - **Bob @ [RetroRGB](https://www.retrorgb.com/retrotink-4k-firmware-v1-6-9-released.html) for the idea.**
 
 <br />
 <br />
