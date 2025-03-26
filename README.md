@@ -9,7 +9,11 @@
 <img width="700" src="./images/1a.JPG" />
 <br />
 
-## **Big Thanks! to [@UstSte](https://x.com/UstSte) for the photos and testing!**
+# Thanks to 
+   - **[@UstSte](https://x.com/UstSte) for the photos and testing.**
+
+   - **Bob @ [RetroRGB](https://www.retrorgb.com/) for the idea.**
+
 <br />
 <br />
 
