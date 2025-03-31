@@ -2,6 +2,7 @@
 **"plug-n-play" gcomp/gscart EXT adapter that enables auto-profiles for the RetroTink 4K**
 
  - A powered-on console on port 1-8 will load SVS profiles S201_ - S208_ on the RT4K Pro/CE
+ - Supports up to 5 connected simultaneously via a headphone jack splitter. Must reflash "firmware" with offset variable set so SVS profile numbers don't overlap.
 
 <img width="700" src="./images/1.JPG" />
 <img width="700" src="./images/1c.JPG" />
