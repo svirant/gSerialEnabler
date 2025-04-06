@@ -44,7 +44,7 @@ There are plenty of options for PCB manufacturing but I prefer [JLCPCB](https://
 [<img width="400" src="./images/3.png" />](https://svirant.github.io/gSerialEnabler/images/ibom.html)
 
  - In addition to the top of the usb-c port, place two more 6x2mm rubber feet to the spots shown, to secure the PCB.
-
+ 
 
 <img width="400" src="./images/4.JPG" />
 
@@ -57,6 +57,7 @@ There are plenty of options for PCB manufacturing but I prefer [JLCPCB](https://
 
 ## Bill of Materials (BOM)
 
+### * gSerial Enabler
 | **Qty**    | Designation | Part |  Link  |  Notes |
 | ------------- | ------------- |------------- |------------- |------------- |
 | 1  | C1 | 0.1 uf / 100nf 50V X7R 0805 Capacitor| [Digikey](https://www.digikey.com/en/products/detail/yageo/CC0805KRX7R9BB104/302874?s=N4IgTCBcDaIMwEYEFokBYAMrkDkAiIAugL5A) | |
@@ -70,6 +71,8 @@ There are plenty of options for PCB manufacturing but I prefer [JLCPCB](https://
 | 1  | | usb-c cable for Arduino programming | [AliExpress](https://www.aliexpress.us/item/3256806983355947.html) | |
 | 3 | | 6x2mm sticky rubber feet | [Amazon](https://www.amazon.com/dp/B06XCNM69B)| |
 
+### * VGA Adapter assembly and BOM can be found [here](https://github.com/svirant/DonutDongle?tab=readme-ov-file#at-least-1-of-the-following-vga-adapters-is-required)
+<br />
 
 # Programming an Arduino Nano
 I recommend the [Official Arduino IDE and guide](https://www.arduino.cc/en/Guide) if you're unfamiliar with Arduinos. All .ino files used for programming are listed above. 
