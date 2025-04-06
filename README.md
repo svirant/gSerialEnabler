@@ -4,11 +4,16 @@
  - A powered-on console on port 1-8 will load SVS profiles S201_ - S208_ on the RT4K Pro/CE
  - Compatible with the SVS
  - Supports up to 5 connected simultaneously via a headphone jack splitter. Must reflash "firmware" with offset variable set so SVS profile numbers don't overlap.
+ - Full instructions listed below for building your own!
+ - If DIY is not your thing, I also have a handful assembled and available for purchase on [Ko-fi](https://ko-fi.com/donutswdad/shop)
+
+Please Note! EXT pins do not exist on all gscart/gcomp revisions. Make sure your switch has them and are free of any headers.
 
 <img width="700" src="./images/1.JPG" />
 <img width="700" src="./images/1c.JPG" />
 <img width="700" src="./images/1b.JPG" />
 <img width="700" src="./images/1a.JPG" />
+<br />
 <br />
 
 # Thanks to 
