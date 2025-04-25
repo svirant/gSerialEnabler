@@ -3,7 +3,9 @@
 
  - A powered-on console on port 1-8 will load SVS profiles S201_ - S208_ on the RT4K Pro/CE
  - Compatible with the SVS
- - Supports up to 5 connected simultaneously via a headphone jack splitter. Must reflash "firmware" with offset variable set so SVS profile numbers don't overlap.
+ - Connect multiple gSerial Enablers, Donut Holes, Donut Dongles simultaneously via a headphone jack splitter.
+   - Must reflash "firmware" with offset variable set so SVS profile numbers don't overlap.
+   - Up to 5 have been connected together simultaneously. More may be supported, but this is the max number I've been able to test.
  - Full instructions listed below for building your own!
  - If DIY is not your thing, I also have a handful assembled and available for purchase on [Ko-fi](https://ko-fi.com/donutswdad/shop)
 
