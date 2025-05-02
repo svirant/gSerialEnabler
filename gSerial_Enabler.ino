@@ -1,5 +1,5 @@
 /*
-* gSerial Enabler v0.3
+* gSerial Enabler v0.4
 * Copyright (C) 2025 @Donutswdad
 *
 * This program is free software: you can redistribute it and/or modify
@@ -32,7 +32,7 @@ bool S0 = false;           // (Profile 0)
 ////////////////////
                        
 // gscart / gcomp adjustment variables for port detection
-float const highsamvolt = 3.1; // rise above this voltage for a high sample
+float const highsamvolt = 2.4; // rise above this voltage for a high sample
 byte const apin[3] = {A0,A1,A2}; // defines analog pins used to read bit0, bit1, bit2 respectively
 uint8_t const dch = 15; // (duty cycle high) at least this many high samples per "samsize" for a high bit (~75% duty cycle)
 uint8_t const dcl = 5; // (duty cycle low) at least this many high samples and less than "dch" per "samsize" indicate all inputs are in-active (~50% duty cycle)
@@ -109,7 +109,7 @@ void readGscart(){
   }
 
   if(samcc == samsize){               // when the "samsize" number of samples has been taken, if the voltage was "high" for more than "dch" # of the "samsize" samples, set the bit to 1
-    for(uint8_t i=0;i<3;i++){
+    for(uint8_t i = 0;i < 3; i++){
       if(highcount[i] > dch)          // if the number of "high" samples per "samsize" are greater than "dch" set bit to 1.  
         bit[i] = 1;
       else if(highcount[i] > dcl)     // if the number of "high" samples is greater than "dcl" and less than "dch" (50% high samples) the switch must be cycling inputs, therefor no active input
