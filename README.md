@@ -5,6 +5,7 @@
  - Compatible with the SVS
  - Connect multiple gSerial Enablers, Donut Holes, Donut Dongles simultaneously via a headphone jack splitter.
    - Must reflash "firmware" with offset variable set so SVS profile numbers don't overlap.
+   - Ex: offset = 8, adds 8 to the default of 201. So ports 1 - 8 would now be S209_ - S216_
    - Up to 5 have been connected together simultaneously. More may be supported, but this is the max number I've been able to test.
  - Full instructions listed below for building your own!
  - If DIY is not your thing, I also have a handful assembled and available for purchase on [Ko-fi](https://ko-fi.com/donutswdad/shop)
