@@ -84,6 +84,19 @@ Some Arduino Nanos come with an Old Bootloader and won't Upload unless specified
 
 <img width="600" alt="bootloader" src="./images/2.png" />
 
+## Steps to update offset
+ - 1 - Download and install the [Arduino IDE](https://www.arduino.cc/en/software/) for your PC or Mac
+ - 2 - Click the green "<> Code" button above and "Download ZIP".
+ - 3 - Extract the .zip file and open up the "gSerial_Enabler.ino" file in the Arduino IDE. It will ask if you would like to move this file inside a folder, select OK.
+ - 4 - With the source code now open, select "Tools" -> "Board" -> "Arduino AVR Boards" -> "Arduino Nano"
+ - 5 - Connect the gSerial Enabler device to your PC or Mac using a usb-c cable. You should see an LED light up when connected.
+   - If connecting the "External" version, you must remove the top half of the case by sliding it upwards while holding parts beneath the aux jack on one side and ribbon cable on other. This will expose the usb-c port.
+   - If connecting the "Internal" version, it's okay to flash it while still inside the gscart/gcomp. Just disconnect power from the gscart/gcomp first.
+ - 6 - With the gSerial Enabler now connected, select it's "port" by going to "Tools" -> "Port", and select the port that starts with "/dev/cu.usbserial-" (on Mac) or "COM" if on PC.
+ - 7 - Almost done! :) In the code itself, find the line that starts with "uint16_t const offset = 0;" and change the 0 to an 8. It should now look like this: uint16_t const offset = 8;
+   - At the moment this is line 27
+ - 8 - From the menu at the top, select "Sketch" -> "Upload". You should see the LEDs on the Arduino Nano flicker and a message that says "Done uploading." if successful.
+ - 9 - Disconnect the usb-c cable and give it a whirl! You can repeat these steps in the future to make any other changes or update if a newer firmware is ever released.
   -----------
 # How to Use
 - Make sure **"Auto Load SVS"** is **"On"** under the RT4K Profiles menu.  
