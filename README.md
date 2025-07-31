@@ -11,7 +11,7 @@
  - If DIY is not your thing, I also have a handful assembled and available for purchase on [Ko-fi](https://ko-fi.com/donutswdad/shop)
 
 > [!NOTE]
-> EXT pins do not exist on all gscart/gcomp revisions. Make sure your switch has them! There are now 2 versions available.
+> The EXT port does not exist on all gscart/gcomp revisions. Make sure your switch has one! There are now 2 versions available.
 >  - "Internal" is for EXT with no header.
 >  - "External" is for EXT with right angle header populating the port.
 
