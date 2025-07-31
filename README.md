@@ -43,7 +43,15 @@ PCBs for this project:
  - [gSerial Enabler (External)](https://github.com/svirant/gSerialEnabler/blob/main/gSerial_Enabler_External.zip)
     - [3DP Case (External)](https://github.com/svirant/gSerialEnabler/blob/main/gSerial_Enabler.3mf)
  - [VGA Adapter](https://github.com/svirant/DonutDongle/tree/main/Adapters) (VGAPassthrough or YC2VGA)
- 
+</br>
+
+> [!NOTE]
+> The "Internal" PCB can also be used for the "External" build, only the vias are smaller. The vias have been made larger on the External version to make soldering the Dupont line easier.
+> It should be noted that the reverse is not true. The vias on the External version are too big to properly secure to pogo-pins.
+>
+
+</br>
+
 There are plenty of options for PCB manufacturing but I prefer [JLCPCB](https://jlcpcb.com) (No affiliation). Using the gerber (.zip) files provided, it's easy to place an order. Below are some tips/guidelines:
 - 1.6mm Thickness
 - For Surface Finish, "HASL(with lead)" is fine
