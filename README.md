@@ -10,14 +10,24 @@
  - Full instructions listed below for building your own!
  - If DIY is not your thing, I also have a handful assembled and available for purchase on [Ko-fi](https://ko-fi.com/donutswdad/shop)
 
-Please Note! EXT pins do not exist on all gscart/gcomp revisions. Make sure your switch has them and are free of any headers.
+> [!NOTE]
+> EXT pins do not exist on all gscart/gcomp revisions. Make sure your switch has them! There are now 2 versions available.
+>  - "Internal" is for EXT with no header.
+>  - "External" is for EXT with right angle header populating the port.
 
-<img width="700" src="./images/1.JPG" />
+# Internal
+<img width="700" src="./images/1d.JPG" />
 <img width="700" src="./images/1c.JPG" />
 <img width="700" src="./images/1b.JPG" />
 <img width="700" src="./images/1a.JPG" />
 <br />
 <br />
+
+# External
+<img width="700" src="./images/1e.JPG" />
+<img width="700" src="./images/1f.JPG" />
+<img width="700" src="./images/1g.JPG" />
+<img width="700" src="./images/1h.JPG" />
 
 # Thanks to 
    - **[@UstSte](https://x.com/UstSte) for the photos and testing.**
@@ -29,7 +39,9 @@ Please Note! EXT pins do not exist on all gscart/gcomp revisions. Make sure your
 
 # Ordering PCBs
 PCBs for this project:
- - [gSerial Enabler](https://github.com/svirant/gSerialEnabler/blob/main/gSerial_Enabler.zip)
+ - [gSerial Enabler (Internal)](https://github.com/svirant/gSerialEnabler/blob/main/gSerial_Enabler.zip)
+ - [gSerial Enabler (External)](https://github.com/svirant/gSerialEnabler/blob/main/gSerial_Enabler_External.zip)
+    - [3DP Case (External)](https://github.com/svirant/gSerialEnabler/blob/main/gSerial_Enabler.3mf)
  - [VGA Adapter](https://github.com/svirant/DonutDongle/tree/main/Adapters) (VGAPassthrough or YC2VGA)
  
 There are plenty of options for PCB manufacturing but I prefer [JLCPCB](https://jlcpcb.com) (No affiliation). Using the gerber (.zip) files provided, it's easy to place an order. Below are some tips/guidelines:
@@ -46,10 +58,13 @@ There are plenty of options for PCB manufacturing but I prefer [JLCPCB](https://
 
 [<img width="400" src="./images/3.png" />](https://svirant.github.io/gSerialEnabler/images/ibom.html)
 
- - In addition to the top of the usb-c port, place two more 6x2mm rubber feet to the spots shown, to secure the PCB.
- 
+ - For Internal version, in addition to the top of the usb-c port, place two more 6x2mm rubber feet to the spots shown, to secure the PCB.
 
-<img width="400" src="./images/4.JPG" />
+<img width="400" src="./images/4.JPG" /> </br>
+
+> [!NOTE]
+> For External version, dupont lines must be crossed over as shown in pictures. Diagram coming soon...
+
 
 # PCB
 <img width="400" src="./images/PCB.png">
@@ -68,11 +83,13 @@ There are plenty of options for PCB manufacturing but I prefer [JLCPCB](https://
 | 1  | U1 | IC BUF NON-INVERT 5.5V SOT23-6 | [Digikey](https://www.digikey.com/en/products/detail/texas-instruments/SN74LVC2G07DBVR/486427) or [alternate](https://www.digikey.com/en/products/detail/umw/SN74LVC2G07DBVR/24889644) | |
 | 1  | J2 | PJ-320 3.5MM Headphone Jack Audio Video Female | [AliExpress](https://www.aliexpress.us/item/3256807448104402.html) | Color: PJ-320B DIP | 
 | 10  | J3,J4 | 2.54mm male pin headers | break off the male headers that come with the Arduino Nano | | 
-| 5 | Pogo-Pin | Mill-Max 0906-1-15-20-75-14-11-0 | [Digikey](https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/0906-1-15-20-75-14-11-0/1147049) | |
 | 1  | | Arduino Nano type c | Support [RetroRGB!](https://amzn.to/4gnHqN4) | Make sure the headers are not soldered. |
 | 1  | | Any 3.5mm / aux / stereo / trs / cable | [AliExpress](https://www.aliexpress.us/item/2255799962255486.html) | I prefer the one listed because the cable itself is very flexible and has no problem being routed inside the case.|
 | 1  | | usb-c cable for Arduino programming | [AliExpress](https://www.aliexpress.us/item/3256806983355947.html) | |
-| 3 | | 6x2mm sticky rubber feet | [Amazon](https://www.amazon.com/dp/B06XCNM69B)| |
+| 3 | | 6x2mm sticky rubber feet | [Amazon](https://www.amazon.com/dp/B06XCNM69B)| Internal version only |
+| 5 | Pogo-Pin | Mill-Max 0906-1-15-20-75-14-11-0 | [Digikey](https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/0906-1-15-20-75-14-11-0/1147049) | Internal version only |
+| 1 | 2x4 Dupont shell | Pins: 2x4Pin | [AliExpress](https://www.aliexpress.us/item/2255800942949805.html) | External version only | 
+| 1 | Dupont line 10cm | Color: Female to Female | [AliExpress](https://www.aliexpress.us/item/3256805315188857.html) | External version only |
 
 ### * VGA Adapter assembly and BOM can be found [here](https://github.com/svirant/DonutDongle?tab=readme-ov-file#at-least-1-of-the-following-vga-adapters-is-required)
 <br />
