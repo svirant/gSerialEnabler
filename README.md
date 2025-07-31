@@ -58,12 +58,17 @@ There are plenty of options for PCB manufacturing but I prefer [JLCPCB](https://
 
 [<img width="400" src="./images/3.png" />](https://svirant.github.io/gSerialEnabler/images/ibom.html)
 
- - For Internal version, in addition to the top of the usb-c port, place two more 6x2mm rubber feet to the spots shown, to secure the PCB.
+## Internal assembly
+In addition to the top of the usb-c port, place two more 6x2mm rubber feet to the spots shown, to secure the PCB.
 
 <img width="400" src="./images/4.JPG" /> </br>
 
-> [!NOTE]
-> For External version, dupont lines must be crossed over as shown in pictures. Diagram coming soon...
+## External assembly
+ - Cut Dupont line in half for 10cm section. 
+ - Remove plastic covers on Dupont line and insert into 2x4 Dupont shell as shown below.
+ - Strip wire on other end and solder into vias on PCB.
+
+<img width="700" src="./images/5.PNG" /> </br>
 
 
 # PCB
@@ -89,7 +94,7 @@ There are plenty of options for PCB manufacturing but I prefer [JLCPCB](https://
 | 3 | | 6x2mm sticky rubber feet | [Amazon](https://www.amazon.com/dp/B06XCNM69B)| Internal version only |
 | 5 | Pogo-Pin | Mill-Max 0906-1-15-20-75-14-11-0 | [Digikey](https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/0906-1-15-20-75-14-11-0/1147049) | Internal version only |
 | 1 | 2x4 Dupont shell | Pins: 2x4Pin | [AliExpress](https://www.aliexpress.us/item/2255800942949805.html) | External version only | 
-| 1 | Dupont line 10cm | Color: Female to Female | [AliExpress](https://www.aliexpress.us/item/3256805315188857.html) | External version only |
+| 1 | Dupont line 20cm | Color: Female to Female | [AliExpress](https://www.aliexpress.us/item/3256805315188857.html) | External version only |
 
 ### * VGA Adapter assembly and BOM can be found [here](https://github.com/svirant/DonutDongle?tab=readme-ov-file#at-least-1-of-the-following-vga-adapters-is-required)
 <br />
