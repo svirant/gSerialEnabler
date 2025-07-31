@@ -12,7 +12,7 @@
 
 > [!NOTE]
 > The EXT port does not exist on all gscart/gcomp revisions. Make sure your switch has one! There are now 2 versions available.
->  - "Internal" is for EXT with no header.
+>  - "Internal" is for EXT with no header. (exposed through-holes)
 >  - "External" is for EXT with right angle header populating the port.
 
 # Internal
@@ -32,7 +32,8 @@
 # Conversion!
 > [!TIP]
 >  - If you wanted to use the External version on your headerless gcomp/gscart, you can easily solder a 2.54mm DC3 angled header onto the EXT port. Part listed in BOM below.
-    
+</br>
+
 # Thanks to 
    - **[@UstSte](https://x.com/UstSte) for the photos and testing.**
 
@@ -50,8 +51,8 @@ PCBs for this project:
 </br>
 
 > [!NOTE]
-> The "Internal" PCB can also be used for the "External" build, only the vias are smaller. The vias have been made larger on the External version to make soldering the Dupont line easier.
-> It should be noted that the reverse is not true. The vias on the External version are too big to properly secure to pogo-pins.
+> The "Internal" PCB can also be used for the "External" build. Only the through-holes are smaller. The through-holes have been made larger on the External version to make soldering the Dupont line easier.
+> It should be noted that the reverse is not true. The through-holes on the External version are too big to properly secure to pogo-pins.
 >
 
 </br>
@@ -78,7 +79,7 @@ In addition to the top of the usb-c port, place two more 6x2mm rubber feet to th
 ## External assembly
  - Cut Dupont line in half for 10cm section. 
  - Remove plastic covers on Dupont line and insert into 2x4 Dupont shell as shown below.
- - Strip wire on other end and solder into vias on PCB.
+ - Strip wire on other end and solder into through-holes on PCB.
 
 <img width="700" src="./images/5.PNG" /> </br>
 
@@ -106,7 +107,7 @@ In addition to the top of the usb-c port, place two more 6x2mm rubber feet to th
 | 5 | Pogo-Pin | Mill-Max 0906-1-15-20-75-14-11-0 | [Digikey](https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/0906-1-15-20-75-14-11-0/1147049) | Internal version only |
 | 1 | 2x4 Dupont shell | Pins: 2x4Pin | [AliExpress](https://www.aliexpress.us/item/2255800942949805.html) | External version only | 
 | 1 | Dupont line 20cm | Color: Female to Female | [AliExpress](https://www.aliexpress.us/item/3256805315188857.html) | External version only |
-| 1 | 2x4 2.54mm DC3 right angle Socket Header | Color: Right Angle Type , Pins: 8P | [AliExpress](https://www.aliexpress.us/item/3256805058042964.html) | (Optional) If you wanted to use the External version on your headerless gSwitch, you can solder this part on. |
+| 1 | 2x4 2.54mm DC3 right angle Socket Header | Color: Right Angle Type , Pins: 8P | [AliExpress](https://www.aliexpress.us/item/3256805058042964.html) | (Optional) If you wanted to use the External version on your headerless gcomp/gscart, you can solder this part on. |
 
 ### * VGA Adapter assembly and BOM can be found [here](https://github.com/svirant/DonutDongle?tab=readme-ov-file#at-least-1-of-the-following-vga-adapters-is-required)
 <br />
