@@ -131,6 +131,7 @@ Some Arduino Nanos come with an Old Bootloader and won't Upload unless specified
  - 7 - Almost done! :) In the code itself, find the line that starts with "uint16_t const offset = 0;" and change the 0 to an 8. It should now look like this: uint16_t const offset = 8;
    - At the moment this is line 27
  - 8 - From the menu at the top, select "Sketch" -> "Upload". You should see the LEDs on the Arduino Nano flicker and a message that says "Done uploading." if successful.
+    - If you get errors, see the section above about changing the "Bootloader" type.
  - 9 - Disconnect the usb-c cable and give it a whirl! You can repeat these steps in the future to make any other changes or update if a newer firmware is ever released.
   -----------
 # How to Use
