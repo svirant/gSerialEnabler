@@ -107,7 +107,8 @@ In addition to the top of the usb-c port, place two more 6x2mm rubber feet to th
 | 5 | Pogo-Pin | Mill-Max 0906-1-15-20-75-14-11-0 | [Digikey](https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/0906-1-15-20-75-14-11-0/1147049) | Internal version only |
 | 1 | 2x4 Dupont shell | Pins: 2x4Pin | [AliExpress](https://www.aliexpress.us/item/2255800942949805.html) | External version only | 
 | 1 | Dupont line 20cm | Color: Female to Female | [AliExpress](https://www.aliexpress.us/item/3256805315188857.html) | External version only |
-| 1 | 2x4 2.54mm DC3 right angle Socket Header | Color: Right Angle Type , Pins: 8P | [AliExpress](https://www.aliexpress.us/item/3256805058042964.html) | (Optional) If you wanted to use the External version on your headerless gcomp/gscart, you can solder this part on. |
+| 1 | CONN HEADER R/A 8POS 2.54MM | Part# 78207-108HLF | [Digikey](https://www.digikey.com/en/products/detail/amphenol-cs-fci/78207-108HLF/1002752) | (Optional) If you wanted to use the External version on your headerless gcomp/gscart, you can solder this part on. |
+| 1 | Alt to the official header above | Color: Right Angle Type , Pins: 8P | [AliExpress](https://www.aliexpress.us/item/3256805058042964.html) | Will most likely not fit inside the LaserBear bumper case, not confirmed. Just FYI. |
 
 ### * VGA Adapter assembly and BOM can be found [here](https://github.com/svirant/DonutDongle?tab=readme-ov-file#at-least-1-of-the-following-vga-adapters-is-required)
 <br />
