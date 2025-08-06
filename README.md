@@ -14,6 +14,10 @@
 > The EXT port does not exist on all gscart/gcomp revisions. Make sure your switch has one! There are now 2 versions available.
 >  - "Internal" is for EXT with no header. (exposed through-holes)
 >  - "External" is for EXT with right angle header populating the port.
+</br>
+
+Thanks to Bob [@RetroRGB](https://www.retrorgb.com/) for showcasing!</br>
+[![Thanks Bob](https://img.youtube.com/vi/3wcF-8wC7H4/0.jpg)](https://www.youtube.com/watch?v=3wcF-8wC7H4&t=119s)
 
 # Internal
 <img width="700" src="./images/1d.JPG" />
