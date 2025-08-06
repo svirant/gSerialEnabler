@@ -18,6 +18,7 @@
 
 Thanks to Bob [@RetroRGB](https://www.retrorgb.com/) for showcasing!</br>
 [![Thanks Bob](https://img.youtube.com/vi/3wcF-8wC7H4/0.jpg)](https://www.youtube.com/watch?v=3wcF-8wC7H4&t=119s)
+[![Thanks Bob](https://img.youtube.com/vi/b-BxFDCHc2k/0.jpg)](https://www.youtube.com/watch?v=b-BxFDCHc2k&t=1107s)
 
 # Internal
 <img width="700" src="./images/1d.JPG" />
