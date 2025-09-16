@@ -1,6 +1,7 @@
 # gSerial Enabler
 **"plug-n-play" gcomp/gscart EXT adapter that enables auto-profiles for the RetroTink 4K**
 
+
  - A powered-on console on port 1-8 will load SVS profiles S201_ - S208_ on the RT4K Pro/CE
  - Compatible with the SVS
  - Connect multiple gSerial Enablers, Donut Holes, Donut Dongles simultaneously via a headphone jack splitter.
@@ -9,6 +10,10 @@
    - Up to 5 have been connected together simultaneously. More may be supported, but this is the max number I've been able to test.
  - Full instructions listed below for building your own!
  - If DIY is not your thing, I also have a handful assembled and available for purchase on [Ko-fi](https://ko-fi.com/donutswdad/shop)
+
+> [!CAUTION]
+> - Currently **does NOT work** on older gScart v1.1 (if any of you DIY'ers have a solution, pls let me know!)
+</br>
 
 > [!NOTE]
 > The EXT port does not exist on all gscart/gcomp revisions. Make sure your switch has one! There are now 2 versions available.
