@@ -12,7 +12,7 @@
  - If DIY is not your thing, I also have a handful assembled and available for purchase on [Ko-fi](https://ko-fi.com/donutswdad/shop)
 
 > [!CAUTION]
-> - Currently **does NOT work** on older gScart v1.1 (if any of you DIY'ers have a solution, pls let me know!)
+> - Currently **does NOT work** on gscartsw_lite v1.5 (if any of you DIY'ers have a solution, pls let me know!)
 </br>
 
 > [!NOTE]
